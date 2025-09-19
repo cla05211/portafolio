@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Willump';
+  src: url('./assets/fuentes/Willump.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body 
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+
+h1
+{
+    font-family: "Willump", sans-serif;
+    font-size: 2.6rem;
+    letter-spacing: 0.5rem;
+    line-height: 3.2rem;
+}
+
+h2
+{
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+}
+
+button
+{
+    background-color: rgb(199, 199, 199);
+    border: 2.8px solid black;
+    color: black;
+    align-items: center;
+    font-weight: 600;
+    font-size: larger;
+    padding: 0.5rem 2rem;
+    letter-spacing: 0.1rem;
+}
+
+button.vertical 
+{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    border-bottom-right-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    padding: 0.8rem 0rem!important;
+    border-left: none !important;
+}
+
+button:hover {
+  background-color: black !important;
+  color: white !important;
+}

@@ -1,0 +1,67 @@
+:host {
+  display: block;
+  height: 100%; 
+}
+
+input,
+textarea{
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.feedback-card {
+  border: 1px solid black;
+  background-color: rgb(235, 235, 235);
+  box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.489);
+  max-width: 100%;
+  margin: auto;
+}
+
+.feedback-header {
+  text-align: center;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-bottom: 1px solid black;
+}
+
+.feedback-bottom {
+  text-align: center;
+  background-color: rgb(186, 186, 186); ;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-top: 1px solid black;
+}
+
+.feedback-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-body__email,
+.feedback-body__message,
+.feedback-body__submit {
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  background-color: rgb(199, 199, 199);
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.feedback-body__email:focus,
+.feedback-body__message:focus {
+  outline: none;
+}
+
+.feedback-body__message {
+  min-height: 50px;
+  resize: vertical;
+}
+
+.feedback-body__submit {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: small;
+  align-self: flex-end;
+}

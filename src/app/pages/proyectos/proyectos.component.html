@@ -1,0 +1,23 @@
+<div class="slider">
+    @for (proyecto of proyectos; track $index) 
+    {
+        <div class="slide" [class.active]="$index === nroSlideActual">
+            <div class="card">
+            <div class="card__img" [id]="'img' + ($index + 1)"></div>
+            <div class="card__content">
+                <p class="card__content-theme">{{this.lenguajesUtilizados[$index]}}</p>
+                <h2 class="card__content-header">Proyecto {{this.proyectos[$index]}}</h2>
+                <p class="card__content-paragraph">
+                {{this.descripciones[$index]}}
+                </p>
+                <a class="card__content-link" href={{this.links[$index]}} target="_blank">Visitar</a>
+            </div>
+            </div>
+        </div>
+    }
+
+  <div class="prevnext">
+    <button class="prevnext-button" id="prev" (click)="avanzarSiguienteSlide()"></button>
+    <button class="prevnext-button" id="next" (click)="retrocederAnteriorSlide()"></button>
+  </div>
+</div>

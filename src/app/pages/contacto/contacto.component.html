@@ -1,0 +1,22 @@
+<div class="feedback-card">
+    <div class="feedback-header">ENVIAR MENSAJE</div>
+        <form [formGroup]="formularioMensaje" class="feedback-body">
+            <input type="email" formControlName="correo" class="feedback-body__email" placeholder="Email" type="email" required>
+            <div *ngIf="verficarCampo('correo') as error">
+                <small>{{ error }}</small>
+            </div>
+            <textarea formControlName="mensaje" class="feedback-body__message" placeholder="Mensaje"></textarea>
+            <div *ngIf="verficarCampo('mensaje') as error">
+                <small>{{ error }}</small>
+            </div>    
+            <button class="feedback-body__submit" type="submit" (click)="enviarMensaje()">ENVIAR</button>
+        </form>
+        @if (error)
+        {
+            <div class="feedback-bottom">Error al enviar mensaje. Por favor vuelva a intentarlo más tarde.</div>
+        }
+        @if (enviado)
+        {
+            <div class="feedback-bottom">¡Mensaje enviado correctamente!</div>
+        }
+</div>

@@ -1,0 +1,79 @@
+.nombre
+{
+    margin-top: 0%;
+}
+
+p
+{
+    line-height: 1.3rem;
+}
+
+.marco {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+   overflow: hidden;
+}
+
+.principal {
+  display: flex;
+  width: 96%;
+  height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;            
+}
+
+.izq {
+  flex: 1;
+  height: 100%;
+  padding-right: 2.5rem;
+  border-right: 2.8px solid black;
+}
+
+.dcha {
+  flex: 2;
+  padding-left: 2rem;
+  box-sizing: border-box;
+}
+
+.seccion {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.principal::-webkit-scrollbar {
+  width: 10px;
+}
+
+.principal::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+.principal::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 5px;
+}
+
+.principal::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+h2
+{
+    text-decoration: underline;
+}

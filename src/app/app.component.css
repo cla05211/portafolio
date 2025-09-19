@@ -1,0 +1,77 @@
+.pantalla
+{
+    background-color: rgb(228, 228, 228);
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGZpbHRlciBpZD0ibm9pc2UiPjxmZVR1cmJ1bGVuY2UgYmFzZUZyZXF1ZW5jeT0iMC4yIiBudW1PY3RhdmVzPSI0IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWx0ZXI9InVybCgjbm9pc2UpIiBmaWxsPSIjMDAwMDAwIi8+PC9zdmc+");
+    background-repeat: repeat;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor
+{
+    position: relative;
+    display: flex;
+    height: 90%;
+    width: 88%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pestañas
+{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 3.5vw;
+    height: 70%;
+}
+
+.menu
+{
+    position: absolute;
+    left: 12vh;
+    top: 4vh;
+    align-items: center;
+}
+
+.menu button
+{
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+}
+
+.contenido
+{
+    background-color: rgb(240, 240, 240);
+    height: 100%;
+    width: 100%;
+    border: 2.8px solid black;
+}
+
+.seleccionado
+{
+    background-color: black;
+    color: white;
+}
+
+.logo
+{
+    height: 5vh;
+}
+
+.logo img {
+  max-width: 100%;    /* se ajusta al ancho del div */
+  max-height: 100%;   /* se ajusta al alto del div */
+  object-fit: cover;  /* rellena el div recortando si es necesario */
+}
+
+.contenido.animating {
+  overflow: hidden;
+}
