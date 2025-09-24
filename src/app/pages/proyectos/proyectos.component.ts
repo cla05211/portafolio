@@ -10,8 +10,8 @@ import { Component } from '@angular/core';
 export class ProyectosComponent {
     proyectos = ["Clínica", "Sala de Juegos"];
     lenguajesUtilizados = ["HTML/CSS/TS", "HTML/CSS/TS"];
-    descripciones = [" Proyecto realizado en el 4to cuatrimestre de la tecnicatura de Programacion. Creada utilizando Angular como framework y Supabase para la base de datos.",
-        " Proyecto realizado en el 4to cuatrimestre de la tecnicatura de Programacion. Creada utilizando Angular como framework y Supabase para la base de datos. El juego Preguntados fue realizado utilizando una API externa."
+    descripciones = [" Proyecto realizado para la materia Práctica Profesional de la tecnicatura de Programación. Creado utilizando Angular y Supabase.",
+        " . Proyecto realizado para la materia Práctica Profesional de la tecnicatura de Programación. Creado utilizando Angular y Supabase"
     ];
     links = ["https://clara-cuenca-clinica-online-2025.vercel.app/home", "https://cla05211-clara-cuenca-sala-de-juegos-2025.vercel.app/home"];
     nroSlideActual = 0;
